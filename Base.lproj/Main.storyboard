@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GreenCam1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNL-Sg-aII">
+                                <rect key="frame" x="0.0" y="717" width="414" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Object Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOA-Nm-hLC">
+                                        <rect key="frame" x="80" y="32" width="254" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="V33-1t-x0V"/>
+                                            <constraint firstAttribute="width" constant="268" id="q0m-i1-vvh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Accuracy: 100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECj-iw-dmM">
+                                        <rect key="frame" x="146" y="152" width="123" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hOA-Nm-hLC" secondAttribute="bottom" constant="87" id="7mt-dB-AYf"/>
+                                    <constraint firstAttribute="bottom" secondItem="hOA-Nm-hLC" secondAttribute="bottom" constant="122" id="94T-pn-hwl"/>
+                                    <constraint firstItem="ECj-iw-dmM" firstAttribute="top" secondItem="hOA-Nm-hLC" secondAttribute="bottom" constant="30" id="Bke-Yr-xrD"/>
+                                    <constraint firstAttribute="bottom" secondItem="ECj-iw-dmM" secondAttribute="bottom" constant="13" id="UEK-Tk-ODH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ECj-iw-dmM" secondAttribute="bottom" constant="67" id="khR-og-acy"/>
+                                    <constraint firstItem="ECj-iw-dmM" firstAttribute="top" secondItem="hOA-Nm-hLC" secondAttribute="bottom" constant="1" id="q3v-La-Geb"/>
+                                    <constraint firstItem="ECj-iw-dmM" firstAttribute="top" secondItem="hOA-Nm-hLC" secondAttribute="bottom" constant="60" id="qmf-cS-ehV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dNL-Sg-aII" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="3bB-oC-1ct"/>
+                            <constraint firstItem="dNL-Sg-aII" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="98z-3y-t0Y"/>
+                            <constraint firstAttribute="bottom" secondItem="dNL-Sg-aII" secondAttribute="bottom" id="NHD-gJ-GPy"/>
+                            <constraint firstItem="dNL-Sg-aII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mcy-K5-4zF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accuracyLabel" destination="ECj-iw-dmM" id="nEJ-XB-Re3"/>
+                        <outlet property="belowView" destination="dNL-Sg-aII" id="iHS-KF-2EG"/>
+                        <outlet property="objectNameLabel" destination="hOA-Nm-hLC" id="g6Z-37-cxB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>
